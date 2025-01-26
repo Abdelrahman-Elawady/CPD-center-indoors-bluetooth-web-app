@@ -109,7 +109,7 @@ document.getElementById('speedSlider').addEventListener('input', async (event) =
 document.getElementById('sizeSlider').addEventListener('input', async (event) => {
     const value = event.target.value;
     document.getElementById('sizeValue').textContent = value;
-    const command = `Size:${value}`;
+    const command = `size:${value}`;
     const encoder = new TextEncoder();
     const data = encoder.encode(command);
     await characteristic.writeValue(data);

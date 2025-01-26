@@ -243,10 +243,10 @@ h3 {
     transition: max-height 1s ease-out;
 }
 #emoji1Section.open {
-    max-height: 500px;
+    max-height: 600px;
 }
 
 #emoji2Section.open {
-    max-height: 500px;
+    max-height: 600px;
 
 }
