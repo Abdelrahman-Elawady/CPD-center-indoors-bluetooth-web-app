@@ -25,12 +25,16 @@
         </label>
         <label id="multicolorLabel">Multicolor: off</label>
         <label>
-            Brightness: <span id="brightnessValue">40</span>
-            <input type="range" id="brightnessSlider" min="0" max="255" value="40" disabled>
+            Brightness: <span id="brightnessValue">122</span>
+            <input type="range" id="brightnessSlider" min="0" max="200" value="122" disabled>
         </label>
         <label>
-            Speed: <span id="speedValue">70</span>
-            <input type="range" id="speedSlider" min="0" max="1000" value="70" disabled>
+            Speed: <span id="speedValue">20</span>
+            <input type="range" id="speedSlider" min="10" max="150" value="20" disabled>
+        </label>
+        <label>
+            Size: <span id="sizeValue">3</span>
+            <input type="range" id="sizeSlider" min="1" max="7" value="3" disabled>
         </label>
         <label>
             Color: <input type="color" id="colorPicker" disabled>
@@ -39,7 +43,6 @@
     <textarea id="terminal" rows="10" cols="50" placeholder="Enter text or commands here..." disabled></textarea>
     <button id="sendCommand" disabled>Send</button>
     <label id="notifyValue">Notify Value: N/A</label>
-    <!-- New Sections -->
     <div>
         <label class="switch">
             <input type="checkbox" id="wrapSwitch" disabled>
@@ -62,6 +65,7 @@
         <div>
             <button id="toggleButton1" disabled>Emoji 1 🔽</button>
             <div id="emoji1Section">
+                <button class="emojiButton" data-emoji="emoji1:off" style="color: rgb(170, 45, 45);">no emoji 1</button>
                 <button class="emojiButton" data-emoji="emoji1:heart">❤️</button>
                 <button class="emojiButton" data-emoji="emoji1:grin">😁</button>
                 <button class="emojiButton" data-emoji="emoji1:smiley">😀</button>
@@ -85,12 +89,13 @@
                 <button class="emojiButton" data-emoji="emoji1:heart_eyes">😍</button>
                 <button class="emojiButton" data-emoji="emoji1:cpd_center_logo"><img src="cpd_center_logo.png" width="30px" height="30px" alt="career center logo"></button>
                 <button class="emojiButton" data-emoji="emoji1:upm2_logo"><img src="upm2_logo.png" width="30px" height="30px" alt="UPM logo"></button>
-                <button class="emojiButton" data-emoji="emoji1:flag_Sa"><img src="flag-sa.png" width="30px" height="30px" alt="saudi flag"></button>
+                <button class="emojiButton" data-emoji="emoji1:flag_sa"><img src="flag-sa.png" width="30px" height="30px" alt="saudi flag"></button>
             </div>
         </div>
         <div>
             <button id="toggleButton2" disabled>Emoji 2 🔽</button>
             <div id="emoji2Section">
+                <button class="emojiButton" data-emoji="emoji2:off" style="color: rgb(170, 45, 45);">no emoji 2</button>
                 <button class="emojiButton" data-emoji="emoji2:heart">❤️</button>
                 <button class="emojiButton" data-emoji="emoji2:grin">😁</button>
                 <button class="emojiButton" data-emoji="emoji2:smiley">😀</button>
@@ -114,7 +119,7 @@
                 <button class="emojiButton" data-emoji="emoji2:heart_eyes">😍</button>
                 <button class="emojiButton" data-emoji="emoji2:cpd_center_logo"><img src="cpd_center_logo.png" width="30px" height="30px" alt="career center logo"></button>
                 <button class="emojiButton" data-emoji="emoji2:upm2_logo"><img src="upm2_logo.png" width="30px" height="30px" alt="UPM logo"></button>
-                <button class="emojiButton" data-emoji="emoji2:flag_Sa"><img src="flag-sa.png" width="30px" height="30px" alt="saudi flag"></button>
+                <button class="emojiButton" data-emoji="emoji2:flag_sa"><img src="flag-sa.png" width="30px" height="30px" alt="saudi flag"></button>
             </div>
         </div>
     </div>

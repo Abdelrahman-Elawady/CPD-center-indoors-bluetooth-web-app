@@ -106,6 +106,15 @@ document.getElementById('speedSlider').addEventListener('input', async (event) =
     await characteristic.writeValue(data);
 });
 
+document.getElementById('sizeSlider').addEventListener('input', async (event) => {
+    const value = event.target.value;
+    document.getElementById('sizeValue').textContent = value;
+    const command = `Size:${value}`;
+    const encoder = new TextEncoder();
+    const data = encoder.encode(command);
+    await characteristic.writeValue(data);
+});
+
 document.getElementById('colorPicker').addEventListener('input', async (event) => {
     const color = event.target.value;
     const r = parseInt(color.slice(1, 3), 16).toString().padStart(3, '0');
