@@ -187,7 +187,7 @@ h3 {
 #fontsDiv {
     border:#626786 solid 1px;
     border-radius: 10px;
-    width: max-content;
+    width: 100%;
     margin: auto;
 }
 
