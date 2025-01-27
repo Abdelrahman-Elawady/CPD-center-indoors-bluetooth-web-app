@@ -178,3 +178,9 @@ document.getElementById('toggleButton2').addEventListener('click', function() {
     let collapsibleDiv = document.getElementById('emoji2Section');
     collapsibleDiv.classList.toggle('open');
 });
+
+document.getElementById('clear').addEventListener('click', async () => {
+    const encoder = new TextEncoder();
+    const data = encoder.encode('clear');
+    await characteristic.writeValue(data);
+});
