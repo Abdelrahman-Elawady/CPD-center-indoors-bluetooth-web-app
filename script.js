@@ -142,6 +142,14 @@ document.getElementById('plasmaSwitch').addEventListener('change', async (event)
     document.getElementById('plasmaLabel').textContent = `${command}`;
 });
 
+document.getElementById('lineSwitch').addEventListener('change', async (event) => {
+    let command = event.target.checked ? 'drawline:on' : 'drawline:off';
+    let encoder = new TextEncoder();
+    let data = encoder.encode(command);
+    await characteristic.writeValue(data);
+    document.getElementById('lineLabel').textContent = `${command}`;
+});
+
 function handleFontButton(buttonId, command) {
     const button = document.getElementById(buttonId);
     button.addEventListener('click', async () => {
